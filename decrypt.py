@@ -24,7 +24,7 @@ def main():
 
     i = 0
     decrypted_Mess = open("decryptText.txt", 'w')
-    #with open("decryptText.txt") as newFile:
+    #with open("decryptText.txt") as newFile will bw generated:
     while i < l -2:
         x = decrypt(nums[i], int(d), int(n))
         y = chr(x)
