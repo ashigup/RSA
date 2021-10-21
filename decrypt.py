@@ -14,19 +14,19 @@ def main():
     keysLength = len(keys)
     d = keys[10]
 
-    nums = []
+    arr = []
     with open("encryptedText.txt", 'r') as file:
         for line in file:
-            nums.append(int(line))
-    l = len(nums)
-    n = nums[l-2]
-    e = nums[l-1]
+            arr.append(int(line))
+    l = len(arr)
+    n = arr[l-2]
+    e = arr[l-1]
 
     i = 0
     decrypted_Mess = open("decryptText.txt", 'w')
     #with open("decryptText.txt") as newFile will bw generated:
     while i < l -2:
-        x = decrypt(nums[i], int(d), int(n))
+        x = decrypt(arr[i], int(d), int(n))
         y = chr(x)
         #print(chr(x).encode('utf-8'), file=decrypted_Mess)
         print(y, end="", file=decrypted_Mess)
