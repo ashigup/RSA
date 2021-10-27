@@ -18,7 +18,7 @@ def main():
                 print(encryption(ord(char),e,n),file=encrypted_mess)    #encrypt by char and write to file
     print(n, file=encrypted_mess)                              #print n and e
     print(keys[4], file=encrypted_mess)
-
+#using encryption function
 #encyrption funciton. m^e % n
 def encryption(m,e,n):
     x = pow(m,e,n)
