@@ -32,7 +32,7 @@ def main():
         print(y, end="", file=decrypted_Mess)
         i+=1
 
-
+#decrypt function
 def decrypt(c,d,n):
     x = pow(c,d,n)
     return x
